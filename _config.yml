@@ -78,7 +78,11 @@ pagination_dir: page
 # next
 theme: next
 
-
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 # aria
 # theme: aria
 # # Hexo localsearch
