@@ -94,7 +94,7 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
-  #categories: /categories/ || th
+  categories: /categories/ || th
   archives: /archives/ || archive
   tags: /tags/ || tags
   #schedule: /schedule/ || calendar
@@ -361,7 +361,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: 'Shopee DP FE'
   count: true
 
 # Hypercomments
@@ -395,7 +395,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8zNzk2NC8xNDQ5NA==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -604,7 +604,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: true
+  enable: false
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
