@@ -232,3 +232,5 @@ hub-admin | https://dp-admin.test.shopee.io/hub | [dp.conf.j2](https://git.garen
 
 # 总结
 本文只是对现有的项目进行了一个介绍，以后遇到其他需求都可以参考现阶段项目的配置。在进行添加或修改之前最好在本地搭建一个 nginx 环境模拟一下，然后再更新到线上环境中。
+
+| 作者：[ayou](http://paradeto.com)
