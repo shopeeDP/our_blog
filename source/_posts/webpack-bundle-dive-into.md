@@ -378,3 +378,5 @@ module.exports = {
  ]
 }
 ```
+
+| 作者：[ayou](http://paradeto.com)
