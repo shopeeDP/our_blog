@@ -104,4 +104,4 @@ search:
 deploy:
   type: git
   repo: 
-      github: git@github.com:shopeeDP/shopeeDP.github.io.git,master
+      github: https://github.com/shopeeDP/shopeeDP.github.io.git,master
