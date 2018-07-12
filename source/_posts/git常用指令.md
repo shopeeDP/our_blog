@@ -8,7 +8,6 @@ categories:
 description: 一些常用的git命令
 ---
 
-<<<<<<< HEAD
 # 常用git命令
 
 ## 基本
@@ -77,6 +76,3 @@ git branch --set-upstream [branch] [remote-branch]
 #### 
 
 ## 远程
-=======
-测试
->>>>>>> 2a41f28fd857651fabe02daee7d5c00488c93a66
