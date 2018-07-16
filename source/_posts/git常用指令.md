@@ -11,7 +11,7 @@ description: 一些常用的git命令
 # 常用git命令
 
 ## 一、基本
-#### config
+### config
 ```
 查看git配置
 git config --list
@@ -24,13 +24,13 @@ git config [--global] user.name "[name]"
 git config [--global] user.email "[emali]"
 ```
 
-#### status
+### status
 ```
 显示工作目录和暂存区的状态
 git status
 ```
 
-#### log
+### log
 ```
 git log
 git log --stat
@@ -39,7 +39,7 @@ git log -p [file]
 git shortlog -sn
 ```
 
-#### diff
+### diff
 ```
 git diff
 git diff [branch 1] [branch 2]
@@ -47,7 +47,7 @@ git diff --shortstat "@{0 day ago}"
 ```
 
 ## 二、本地
-#### add
+### add
 ```
 git add [file...]
 git add [path]
@@ -56,7 +56,7 @@ git add -u
 git add -A
 ```
 
-#### commit
+### commit
 ```
 git commit -m "[your message]"
 git commit --amend
@@ -64,7 +64,7 @@ git commit -a
 git commit -v
 ```
 
-#### branch
+### branch
 ```
 git branch
 git branch -a
@@ -77,50 +77,51 @@ git branch --set-upstream [branch] [remote-branch]
 git branch -dr [remote/branch]
 ```
 
-#### checkout
+### checkout
 ```
 git checkout [branch]
 git checkout -b [new branch]
 git checkout -
 ```
 
-#### cherry-pick
+### cherry-pick
 ```
 git cherry-pick [commit]
 ```
 
-#### rebase
+### rebase
 ```
 git rebase [upstream] [branch]
 git rebase -i
 ```
 
+
 ## 三、远程
-#### clone
+### clone
 ```
 git clone
 ```
 
-#### remote
+### remote
 ```
 git remote -v
 git remote show [remote]
 git remote add [new name] [url]
 ```
 
-#### fetch
+### fetch
 ```
 git fetch
 ```
 
-#### pull
+### pull
 ```
 git pull
 git pull [remote] [source]:[destination]
 git pull --rebase
 ```
 
-#### push
+### push
 ```
 git push
 git push 
@@ -131,17 +132,17 @@ git push [remote] --all
 ```
 
 ## 四、撤销
-#### checkout
+### checkout
 ```
 git checkout .
 ```
 
-#### commit
+### commit
 ```
 git commit --amend
 ```
 
-#### reset
+### reset
 ```
 git reset [file]
 git reset --hard
@@ -150,12 +151,12 @@ git reset --hard [commit]
 git reset --keep [commit]
 ```
 
-#### revert
+### revert
 ```
 git revert [commit]
 ```
 
-#### stash
+### stash
 ```
 git stash
 git stash pop

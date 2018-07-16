@@ -350,7 +350,7 @@ mathjax:
 han: false
 
 # Swiftype Search API Key
-#swiftype_key:
+# swiftype_key: rx2qWUkhsPL9_u7fXzLj
 
 # Baidu Analytics ID
 #baidu_analytics:
@@ -465,7 +465,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-122324271-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -607,7 +607,7 @@ local_search:
   enable: false
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
-  trigger: auto
+  trigger: manual
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
 
