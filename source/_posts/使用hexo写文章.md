@@ -97,4 +97,4 @@ markdown中插入图片的语法
 [嘟嘟独立博客 hexo干活系列：（一）hexo+github搭建个人独立博客](http://tengj.top/2016/02/22/hexo1/)
 
 
-| 作者：[Dk](https://github.com/Darkindom)
+| 作者：[Dk](https://darkindom.github.io)
