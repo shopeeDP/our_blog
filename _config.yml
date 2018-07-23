@@ -105,3 +105,22 @@ deploy:
   type: git
   repo: 
       github: https://github.com/shopeeDP/shopeeDP.github.io.git,master
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-hijiki
+  display:
+    position: left
+    width: 80
+    height: 160
+    hOffset: 40
+    vOffset: -20
+  mobile:
+    show: false
