@@ -10,7 +10,23 @@ description: 一些常用的git命令
 
 # 常用git命令
 
-## 一、基本
+## 一、git状态
+### 工作区域
+![git-area](/images/git-command/git-command-1.png)
+工作区：日常编辑代码的地方
+本地仓库：保存本地提交记录
+暂存区：相当于工作区和本地仓库中简的缓存，代表要提交代码的一个工作状态，维护的是一个虚拟的树形结构
+
+### 文件变化周期
+![git-file-live](/images/git-command/git-command-2.png)
+添加一个新文件A，A处于 `Untracked` 状态，
+通过add将其加至暂存区，A变成 `Staged` 状态，
+通过commit提交，A变成 `Unmodified` 状态，
+对 `Unmodified` 状态的文件进行修改，就变成 `Unmodified` 状态，
+删除文件，将会使其变成 `Untracked` 状态
+
+
+## 二、基本
 ### config
 ```
 查看git配置
@@ -66,7 +82,7 @@ git diff <commit> [path]
 git diff --shortstat "@{0 day ago}"
 ```
 
-## 二、本地
+## 三、本地
 ### add
 ```
 添加文件到暂存区
@@ -159,7 +175,7 @@ git rebase -i <start point> <end point>
 ```
 
 
-## 三、远程
+## 四、远程
 ### clone
 ```
 克隆远程仓库
@@ -217,7 +233,7 @@ git push [remote] --force
 git push [remote] --all
 ```
 
-## 四、撤销
+## 五、撤销
 ### checkout
 ```
 将所有暂存区的文件恢复到工作区
@@ -272,4 +288,4 @@ git stash
 git stash pop
 ```
 
-| 作者：[Dk](https://darkindom.github.io)
+| 作者：[Dk](https://github.com/Darkindom)
