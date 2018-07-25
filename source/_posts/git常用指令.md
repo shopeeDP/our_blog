@@ -192,6 +192,9 @@ git remote show <remote>
 
 添加一个远程仓库，并命名为 new name
 git remote add <new name> <url>
+
+修改远程仓库的地址
+git remote set-url origin <url>
 ```
 
 ### fetch
