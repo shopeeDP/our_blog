@@ -124,7 +124,7 @@ module.exports = {
 3. 自执行函数最后调用 `__webpack_require__(__webpack_require__.s = 2)` 并传入了入口模块的 id，这样整个应用就跑起来了。
 
 # 模块异步加载
-假设我们的入口模块代码如下：
+假设我们的入口模块代码如下：
 
 ```javascript
 import('./page1').then(page => {
@@ -144,7 +144,7 @@ import('./page4').then(page => {
 })
 ```
 
-打包后的结果：
+打包后的结果：
 
 *bundle.js*
 
@@ -316,9 +316,9 @@ exports.name = 'page1'
 
 1. `bundle.js` 中 modules[4] 模块中执行的 `__webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 3)).then(...)` 可以分解为两步：其中 `__webpack_require__.e/* import() */(0)` 是异步加载 chunk, `__webpack_require__.bind(null, 3)` 为安装模块。
 
-2. `__webpack_require__.e` 主要功能是通过 dom 操作插入 script 标签来异步加载 chunk 对应的 js 文件，新建了一个 Promise 对象 promise，并将 [resolve, reject, promise] 存在 installedChunks 中。
+2. `__webpack_require__.e` 主要功能是通过 dom 操作插入 script 标签来异步加载 chunk 对应的 js 文件，新建了一个 Promise 对象 promise，并将 [resolve, reject, promise] 存在 installedChunks 中。
 
-3. 异步加载的 chunk 会执行 `webpackJsonp` 方法，该方法中会执行 installedChunks 中存放的 resolve 方法，从而通知 modules[4] 中的代码继续执行。
+3. 异步加载的 chunk 会执行 `webpackJsonp` 方法，该方法中会执行 installedChunks 中存放的 resolve 方法，从而通知 modules[4] 中的代码继续执行。
 
 整个过程可以用下图来表示：
 
@@ -341,7 +341,7 @@ src
     pageB.js
 ```
 
-有时候网站会由多个页面组成，每个页面都是一个独立的单页面应用，这些页面技术栈相同且包含相同的业务代码，如果每个页面的代码都将这些公共的部分包含进去，势必会造成：1) 相同的资源重复加载 2) 每个页面的体积太大
+有时候网站会由多个页面组成，每个页面都是一个独立的单页面应用，这些页面技术栈相同且包含相同的业务代码，如果每个页面的代码都将这些公共的部分包含进去，势必会造成：1) 相同的资源重复加载 2) 每个页面的体积太大
 
 为了解决这个问题，可以将公共代码提取出来，具体到上面的例子，我们可能希望最终打包的结果像这样：
 
