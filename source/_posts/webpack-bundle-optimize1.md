@@ -1,11 +1,10 @@
 ---
-title: webpack 打包优化
+title: webpack 打包优化（一）
 date: 2018-08-15 11:06:53
 tags:
 - webpack
-- 优化
 categories:
-- webpack
+- 优化
 ---
 
 
@@ -258,7 +257,7 @@ module.exports = config
 
 运行 `yarn run build` 后，得到如下结果：
 
-![](/images/webpack-bundle-optimize/1.png)
+![](/images/webpack-bundle-optimize1/1.png)
 
 
 这里有两个地方可以进一步优化：
@@ -281,7 +280,7 @@ new webpack.optimize.CommonsChunkPlugin({
 
 再次执行打包命令，得到结果:
 
-![](/images/webpack-bundle-optimize/2.png)
+![](/images/webpack-bundle-optimize1/2.png)
 
 这样就把异步路由里面的公共组件都提取到了 `common-main.****` 中了。
 
